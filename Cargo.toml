@@ -1,0 +1,13 @@
+[package]
+name = "structinator_traits"
+version = "0.1.0"
+edition = "2021"
+description = "Library for traits allowing transfer of data from iterators to structs"
+license = "Apache-2.0"
+authors = ["Benjamin Richcreek <richcreekbenjamin@gmail.com"]
+keywords = ["convenience","struct","iterator","conversion","trait"]
+categories = ["development-tools::build-utils","rust-patterns"]
+repository = "https://github.com/script-mouse/structinator_traits"
+
+[dev-dependencies]
+enum_unwrapper = {path = "../../enum_unwrapper", version = "0.1"}
