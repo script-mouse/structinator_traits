@@ -1,0 +1,10 @@
+[package]
+name = "structinator_traits"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+structinator = {path = "../../structinator", version = "0.1"}
+enum_unwrapper = {path = "../../enum_unwrapper", version = "0.1"}
