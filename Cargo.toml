@@ -1,13 +1,23 @@
 [package]
-name = "structinator_traits"
+name = "structurray"
 version = "0.1.0"
 edition = "2021"
-description = "Library for traits allowing transfer of data from iterators to structs"
+readme = "README.md"
+authors = ["Benjamin Richcreek <brygidarichcreek@gmail.com>"]
+description = "Easy psuedo-array generation for database optimization"
 license = "Apache-2.0"
-authors = ["Benjamin Richcreek <richcreekbenjamin@gmail.com"]
-keywords = ["convenience","struct","iterator","conversion","trait"]
-categories = ["development-tools::build-utils","rust-patterns"]
-repository = "https://github.com/script-mouse/structinator_traits"
+categories = ["data-structures", "development-tools::build-utils"]
+keywords = ["macro","serde","serialization","proc-macro","array"]
+repository = "https://github.com/script-mouse/structurray"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0"
+syn = {version = "2.0", features = ["full"]}
+proc-macro2 = "1.0"
+ascii_basing = "0.1"
 
 [dev-dependencies]
-enum_unwrapper = {path = "../../enum_unwrapper", version = "0.1"}
+serde = {version = "1", features = ["derive"]}
